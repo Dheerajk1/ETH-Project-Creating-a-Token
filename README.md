@@ -24,8 +24,9 @@ Increases the total supply and the balance of a specified address.
 
 
 
-function mint(address _address, uint _value) public  
 
+
+function mint(address _address, uint _value) public  
     {
     
       totalSupply += _value;
@@ -38,8 +39,8 @@ Decreases the total supply and the balance of a specified address, with a condit
 
 
 
-function burn (address _address, uint _value) public  
 
+function burn (address _address, uint _value) public  
     {
     
         if (balances[_address] >= _value)   
