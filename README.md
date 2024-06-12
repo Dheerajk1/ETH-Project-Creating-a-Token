@@ -21,21 +21,27 @@ balances: A mapping from addresses to their respective token balances.
 
 ### Mint Function:
 Increases the total supply and the balance of a specified address.
+
 function mint(address _address, uint _value) public  
     {
-    totalSupply += _value;
-    balances[_address] += _value;             
+    
+      totalSupply += _value;
+      balances[_address] += _value;    
+      
     }
 
 ### Burn Function:
 Decreases the total supply and the balance of a specified address, with a condition that the balance must be greater than or equal to the amount to be burned.
 function burn (address _address, uint _value) public  
     {
-        if (balances[_address] >= _value)                 
+    
+        if (balances[_address] >= _value)   
+        
         {
-          totalSupply -= _value;
-          balances[_address] -= _value;                  
+           totalSupply -= _value;
+           balances[_address] -= _value;                  
         }
+        
     }
 
 
