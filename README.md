@@ -5,7 +5,9 @@ MyToken is a simple Solidity smart contract that defines a custom token named "D
 # Public Variables:
 
 tokenName: The name of the token (Dheeraj).
+
 tokenAbbrv: The abbreviation of the token (Kumar).
+
 totalSupply: The total number of tokens in circulation.
 
 # Mapping:
