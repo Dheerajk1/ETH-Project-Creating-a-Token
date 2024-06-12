@@ -23,8 +23,11 @@ balances: A mapping from addresses to their respective token balances.
 Increases the total supply and the balance of a specified address.
 
 
+
 function mint(address _address, uint _value) public  
+
     {
+    
       totalSupply += _value;
       balances[_address] += _value;    
       
@@ -34,8 +37,11 @@ function mint(address _address, uint _value) public
 Decreases the total supply and the balance of a specified address, with a condition that the balance must be greater than or equal to the amount to be burned.
 
 
+
 function burn (address _address, uint _value) public  
+
     {
+    
         if (balances[_address] >= _value)   
         
         {
